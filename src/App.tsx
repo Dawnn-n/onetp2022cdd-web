@@ -6,7 +6,7 @@ import Login from './views/Login';
 import Homepage from './views/Homepage';
 import GuidedTour from './views/GuidedTour';
 
-function App() {
+export default function App() {
   return (
    <BrowserRouter>
    <Routes>
@@ -17,5 +17,3 @@ function App() {
    </BrowserRouter>
   );
 }
-
-export default App;
