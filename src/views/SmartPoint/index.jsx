@@ -1,7 +1,7 @@
 import './style.css'
-function SmartPoint(){
+
+export default function SmartPoint(){
     return(
         <div></div>
     );
 }
-export default SmartPoint

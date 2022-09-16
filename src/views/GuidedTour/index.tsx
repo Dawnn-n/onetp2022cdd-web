@@ -1,7 +1,7 @@
 import './style.css'
-function GuidedTour(){
+
+export default function GuidedTour(){
     return(
         <div></div>
    )
 }
-export default GuidedTour

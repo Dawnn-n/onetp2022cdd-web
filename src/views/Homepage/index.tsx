@@ -1,7 +1,7 @@
 import './style.css'
-function Homepage(){
+
+export default function Homepage(){
     return(
         <div className="grid"></div>
     );
 }
-export default Homepage
