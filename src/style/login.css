@@ -1,28 +1,67 @@
-.e1_2 { 
-	overflow:hidden;
+.login { 
+	overflow: hidden;
+	background-color:#FFF3EB;
 }
+
+.header {
+	margin: 0;
+	width: 100%;
+	height: 39.4%;
+	background: url(../assets/header.png) no-repeat 0 0 / 100% 100%;
+	display: flow-root;
+}
+
+.title {
+	width: 38.3vw;
+	height: 17vh;
+	margin-left: 16.6%;
+	margin-top: 6.7vh;
+	background: url(../assets/title.svg) no-repeat 0 0 / contain;
+}
+
+form {
+	margin: auto;
+	margin-top: 10.6vh;
+	width: 32.7%;
+	height: 37%;
+}
+
+form>* {
+	width: 100%;
+	height: 18.6%;
+}
+
+input[placeholder="Username"] {
+	
+}
+
+input[placeholder="Password"] {
+	margin-top: 3vh;
+}
+
+input[value="Login"] {
+	margin-top: 6.6vh;
+}
+
+form>a {
+	margin-top: 2vh;
+	font-size: 1.56vh;
+}
+
 .e1_2 { 
 	background-color:rgba(255, 243.00000071525574, 235.0000011920929, 1);
-	width:1440px;
-	height:1024px;
+	width:100%;
+	height:100%;
 	position:absolute;
+	overflow: hidden;
 }
 .e36_3 { 
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color:rgba(91.00000217556953, 11.000000294297934, 59.00000028312206, 1);
 	width:1534px;
 	height:330.3281555175781px;
 	position:absolute;
 	left:-42px;
 	top:-11px;
-}
-.e36_4 { 
-	background-color:rgba(182.00000435113907, 22.000000588595867, 118.00000056624413, 1);
-	width:1550.53759765625px;
-	height:309.6944885253906px;
-	position:absolute;
-	left:-34px;
-	top:-30.575439453125px;
+	border: none;
 }
 .e40_11 { 
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -65,26 +104,7 @@
 	position:absolute;
 	left:18.8799991607666px;
 	top:20.453332901000977px;
-}
-.e40_15 { 
-	border:1px solid rgba(91.00000217556953, 11.000000294297934, 59.00000028312206, 1);
-}
-.e40_15 { 
-	width:20.97777557373047px;
-	height:7.866666793823242px;
-	position:absolute;
-	left:5.244444847106934px;
-	top:19.666667938232422px;
-}
-.e40_16 { 
-	border:1px solid rgba(91.00000217556953, 11.000000294297934, 59.00000028312206, 1);
-}
-.e40_16 { 
-	width:10.488889694213867px;
-	height:10.488889694213867px;
-	position:absolute;
-	left:10.488889694213867px;
-	top:3.933333396911621px;
+	background: url(../assets/user-icon.png);
 }
 .e40_17 { 
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -127,26 +147,7 @@
 	position:absolute;
 	left:18.8799991607666px;
 	top:20.453332901000977px;
-}
-.e40_21 { 
-	border:1px solid rgba(91.00000217556953, 11.000000294297934, 59.00000028312206, 1);
-}
-.e40_21 { 
-	width:23.600000381469727px;
-	height:14.422223091125488px;
-	position:absolute;
-	left:3.933333396911621px;
-	top:14.422223091125488px;
-}
-.e40_22 { 
-	border:1px solid rgba(91.00000217556953, 11.000000294297934, 59.00000028312206, 1);
-}
-.e40_22 { 
-	width:13.11111068725586px;
-	height:11.800000190734863px;
-	position:absolute;
-	left:9.177777290344238px;
-	top:2.622222423553467px;
+	background: url(../assets/lock-icon.png);
 }
 .e40_23 { 
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
