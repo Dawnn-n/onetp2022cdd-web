@@ -7,12 +7,12 @@ import GuidedTour from './views/GuidedTour';
 
 export default function App() {
   return (
-   <BrowserRouter>
-    <Routes>
-      <Route index element={<Login />} />
-      <Route path='/' element={<Homepage />}/>
-      <Route path='guided_tours/' element={<GuidedTour />}></Route>
-    </Routes>
-   </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Login />} />
+        <Route path='/' element={<Homepage />}/>
+        <Route path='guided_tours/' element={<GuidedTour />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
