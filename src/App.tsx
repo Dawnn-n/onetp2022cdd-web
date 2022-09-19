@@ -1,17 +1,18 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import Login from './Login';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from './views/Login';
+import Homepage from './views/Homepage';
+import GuidedTour from './views/GuidedTour';
 
 export default function App() {
   return (
-    <div className="app">
-      <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Login />} />
-                    <Route path="/home" element={<Home />} />
-                </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Login />} />
+        <Route path='/' element={<Homepage />}/>
+        <Route path='guided_tours/' element={<GuidedTour />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
