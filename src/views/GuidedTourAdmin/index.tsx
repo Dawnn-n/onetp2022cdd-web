@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
-import Header from '../Header';
-import style from './style.module.css'
+import './style.css'
 
-export default function Homepage(params : {
+export default function GuidedTourAdmin(params : {
     toggleHeader : (state : boolean) => void
 }){
     useEffect(() => {
         params.toggleHeader(true)
     })
 
+
     return (
-        <section className="homepage">
+        <section className="tours-admin">
 
         </section>
     );

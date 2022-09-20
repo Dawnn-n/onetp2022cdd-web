@@ -1,5 +1,5 @@
 * {
-  font-family: montserrat;
+  font-family: "Montserrat";
 }
 
 body {
@@ -12,6 +12,17 @@ body {
 }
 
 section {
+  position: absolute;
+  top: 0;
   width: 100vw;
   height: 100vh;
+}
+
+.login-page { 
+	overflow: hidden;
+	background:#FFF3EB;
+}
+
+.homepage, .tours-admin, .stands-admin, .points-admin {
+  background: url(./expo-background.jpg) 0 0 / cover;
 }
