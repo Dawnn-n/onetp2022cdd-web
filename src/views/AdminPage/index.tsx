@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import EditPencil from '../EditPencil';
 import style from './style.module.css';
 
 const data = [ // To be migrated to Firebase
@@ -31,7 +32,7 @@ export default function AdminPage(params : {
 
     return (
         <section className={params.type+"s-admin"}>
-            <h1 className={style["title"]}>{titles[typeCode]}<div className={style["edit-btn"]} /></h1>
+            <h1 className={style["title"]}>{titles[typeCode]}<EditPencil/></h1>
             <div className={style["list-container"]}>
                 <ul>
                     
