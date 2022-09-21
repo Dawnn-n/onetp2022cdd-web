@@ -5,7 +5,7 @@ const data = [ // To be migrated to Firebase
     [
         {
         title: "Motomami",
-        fields: [<>1:30</>, <>Rosalía</>, <>15 pers.</>, <div className="image-icon" />],
+        values: [<>1:30</>, <>Rosalía</>, <>15 pers.</>, <div className="image-icon" />],
         },
     ],
 ]
@@ -22,10 +22,12 @@ export default function AdminPage(params : {
 
     const [adminList, resetAdminList] = useState([<></>])
     useEffect(() => {
-        const subdata = data[typeCode]
-        for (let i = 0; i < subdata.length; i++) {
-            adminList.push(<AdminListUnit type={params.type} id={i} />)
-    }
+        resetAdminList([])
+        const newAdminList : JSX.Element[] = []
+        for (let i = 0; i < data[typeCode].length; i++) {
+            newAdminList.push(<AdminListUnit type={params.type} id={i} />)
+        }
+        resetAdminList(newAdminList)
     })
     
 
@@ -62,6 +64,17 @@ function AdminListUnit(params : {
     ]
     var title = data[typeCode][params.id].title
     if (title == null || title == "") title = layoutData[typeCode].defaultTitle+params.id
+
+    const [fieldList, resetFieldList] = useState([<></>])
+    useEffect(() => {
+        resetFieldList([])
+        const newFieldList : JSX.Element[] = []
+        const subdata = data[typeCode][params.id].values
+        for (let i = 0; i < subdata.length; i++) {
+            newFieldList.push(<ListUnitField field="" value="" />)
+        }
+        resetFieldList(newFieldList)
+    })
 
     return (
         <li className="admin-list-unit">
