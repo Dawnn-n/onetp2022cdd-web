@@ -30,6 +30,7 @@
     box-shadow: 0 0 .3vh #5B0B3B;
     border-radius: .2vh;
     font-size: 1.95vh;
+	font-family: "Montserrat";
 }
 
 .input[placeholder="USERNAME"] {
@@ -49,7 +50,6 @@
     background: #B61676;
     box-shadow: #B61676;
     color: white;
-    font-weight: bolder;
 }
 
 .form>.a {

@@ -1,5 +1,5 @@
 * {
-  font-family: "Montserrat";
+  font-weight: bolder;
 }
 
 body {
@@ -16,6 +16,7 @@ section {
   top: 0;
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 .login-page { 
@@ -23,6 +24,7 @@ section {
 	background:#FFF3EB;
 }
 
-.homepage, .tours-admin, .stands-admin, .points-admin {
-  background: url(./expo-background.jpg) 0 0 / cover;
+section:not(.login-page) {
+  padding: 25.5vh 12.85vw 0 12.85vw;
+  background: url(./expo-background.jpg) 0 0 / cover scroll;
 }

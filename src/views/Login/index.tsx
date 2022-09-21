@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import style from './style.module.css'
 
 export default function Login(params : {
-    toggleHeader : (state : boolean) => void
+    toggleHeader : (state : boolean) => void,
 }){
     useEffect(() => {
         params.toggleHeader(false)

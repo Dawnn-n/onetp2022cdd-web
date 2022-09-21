@@ -1,0 +1,38 @@
+.title {
+    margin-top: 6vh;
+    font-size: 5.1vh;
+    font-family: "Inter";
+}
+
+.edit-btn {
+    margin-left: 3vw;
+    width: 2vw;
+	height: 2vw;
+    display: inline-block;
+	background: url(../../assets/edit-icon.svg) 0 0 / 100% 100%;
+    transform: translate(0, 0.3vw);
+}
+
+.list-container {
+    margin-top: 1vh;
+	height: fit-content;
+    border: solid #FF88337F 0.8vw;
+    box-sizing: border-box;
+    border-radius: 0.8vw;
+    background: #D9D9D9B0;
+}
+
+.list-container ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+.admin-list-unit {
+	flex: max-content 0;
+    background: #FFF5;
+    border-radius: 0.8vw;
+}
+

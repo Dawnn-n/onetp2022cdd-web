@@ -1,0 +1,40 @@
+.title-box {
+    margin-top: 5vh;
+    width: 50vw;
+    height: fit-content;
+    padding: 5.5vh 3vw 5.5vh 3vw;
+    border-radius: 1vw;
+    background: #B6167678;
+    color: white;
+    font-family: "Inter";
+}
+
+.title-box h1 {
+    margin: 0;
+    font-size: 5.1vh;
+}
+
+.title-box p {
+    font-size: 4.2vh;
+}
+
+.edit-btn {
+    margin-left: 3vw;
+    width: 2vw;
+	height: 2vw;
+    display: inline-block;
+	background: url(../../assets/edit-icon.svg) 0 0 / 100% 100%;
+    transform: translate(0, 0.3vw);
+}
+
+.about-box {
+    position: absolute;
+    margin-left: 25vw;
+    margin-top: 1.5vh;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.8vh 2vw 0.8vh 1vw;
+    border-radius: 1vw;
+    background: #FF8833;
+    font-size: 4vh;
+}
