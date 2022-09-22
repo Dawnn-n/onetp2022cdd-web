@@ -44,7 +44,7 @@
 	background: url(../../assets/lock-icon.svg) no-repeat 1.891vh 1.891vh / 3.1vh 3.1vh;
 }
 
-.input[value="LOGIN"] {
+.login {
 	margin-top: 6.6vh;
     border-color: #B61676;
     background: #B61676;

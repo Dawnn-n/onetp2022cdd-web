@@ -7,26 +7,17 @@ import Header from './views/Header';
 import AdminPage from './views/AdminPage';
 
 export default function App() {
-  const [slimHeader, setSlimHeader] = useState(true)
-  const setHeader = (state : boolean) => {
-    setSlimHeader(state)
-  }
-  useEffect(() => {
-    console.log(slimHeader)
-  }, [slimHeader])
 
   return (
-    <>
-      {slimHeader? <Header /> : <></>}
       <BrowserRouter>
+      <Header />
         <Routes>
-          <Route index element={<Login toggleHeader={setHeader} />} />
-          <Route path='/home' element={<Homepage toggleHeader={setHeader} />}/>
-          <Route path='/tours' element={<AdminPage type="tour" toggleHeader={setHeader} />}></Route>
-          <Route path='/stands' element={<AdminPage type="stand" toggleHeader={setHeader} />}></Route>
-          <Route path='/points' element={<AdminPage type="point" toggleHeader={setHeader} />}></Route>
+          <Route index element={<Login />} />
+          <Route path='/home' element={<Homepage />}/>
+          <Route path='/tours' element={<AdminPage type="tour" />}></Route>
+          <Route path='/stands' element={<AdminPage type="stand" />}></Route>
+          <Route path='/points' element={<AdminPage type="point" />}></Route>
         </Routes>
       </BrowserRouter>
-    </>
   );
 }

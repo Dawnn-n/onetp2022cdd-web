@@ -26,11 +26,7 @@ const data = [ // To be migrated to Firebase
 
 export default function AdminPage(params : {
     type : string,
-    toggleHeader : (state : boolean) => void,
 }){
-    useEffect(() => {
-        params.toggleHeader(true)
-    })
     const typeCode = (params.type==="tour")? 0 : (params.type==="stand")? 1 : (params.type==="point")? 2 : 3
     const titles = [<>Visitas guiadas</>, <>Exposiciones</>, <>Puntos Inteligentes</>]
 
@@ -52,7 +48,9 @@ export default function AdminPage(params : {
 
     return (
         <section className={params.type+"s-admin"}>
-            <h1 className={style["title"]}>{titles[typeCode]}<EditPencil/></h1>
+            <h1 className={style["title"]}>{titles[typeCode]}<EditPencil action={function (): void {
+                throw new Error('Function not implemented.');
+            } }/></h1>
             <div className={style["list-container"]}>
                 <ul>{adminList}</ul>
             </div>
