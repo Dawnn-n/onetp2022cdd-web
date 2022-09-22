@@ -12,6 +12,14 @@ const data = [ // To be migrated to Firebase
             title: "",
             values: [<>1:15</>, <>David</>, <>20 pers.</>, <div className={style["image-icon"]} />],
         },
+        {
+            title: "Motomami",
+            values: [<>1:30</>, <>Rosalía</>, <>15 pers.</>, <div className={style["image-icon"]} />],
+        },
+        {
+            title: "",
+            values: [<>1:15</>, <>David</>, <>20 pers.</>, <div className={style["image-icon"]} />],
+        },
     ],
     [
 
@@ -31,16 +39,13 @@ export default function AdminPage(params : {
     const titles = [<>Visitas guiadas</>, <>Exposiciones</>, <>Puntos Inteligentes</>]
 
     const [adminList, resetAdminList] = useState([<></>])
-    console.log("first", adminList)
-
-    // const [listDummyR, listDummyW] = useState(0)
-    // const updateAdminList = () => {listDummyW(listDummyR+1)}
 
     useEffect(() => {
         resetAdminList([])
         const newAdminList : JSX.Element[] = []
         for (let i = 0; i < data[typeCode].length; i++) {
-            console.log("outer", i, adminList, newAdminList)
+            // console.log("outer", i, adminList, newAdminList)
+            console.log(i)
             newAdminList.push(<AdminListUnit type={params.type} id={i} />)
         }
         resetAdminList(newAdminList)
@@ -50,7 +55,7 @@ export default function AdminPage(params : {
         <section className={params.type+"s-admin"}>
             <h1 className={style["title"]}>{titles[typeCode]}<EditPencil action={function (): void {
                 throw new Error('Function not implemented.');
-            } }/></h1>
+            } } /></h1>
             <div className={style["list-container"]}>
                 <ul>{adminList}</ul>
             </div>
@@ -81,15 +86,13 @@ function AdminListUnit(params : {
     if (title === null || title === "") title = layoutData[typeCode].defaultTitle+params.id
 
     const [fieldList, resetFieldList] = useState([<></>])
-    // const [fieldDummyR, fieldDummyW] = useState(0)
-    // const updateFieldList = () => {fieldDummyW(fieldDummyR+1)}
 
     useEffect(() => {
         resetFieldList([])
         const newFieldList : JSX.Element[] = []
         const subdata = data[typeCode][params.id].values
         for (let i = 0; i < subdata.length; i++) {
-            console.log("inner", i, newFieldList)
+            // console.log("inner", i, newFieldList)
             newFieldList.push(<ListUnitField field={layoutData[typeCode].fields[i]} value={subdata[i]} />)
         }
         resetFieldList(newFieldList)
@@ -102,6 +105,9 @@ function AdminListUnit(params : {
                 <form>{fieldList}</form>
             </div>
             <div className={style["unit-image"]}><h2>img holder</h2></div>
+            <span className={style["corner-pencil"]}><EditPencil action={function (): void {
+                throw new Error('Function not implemented.');
+            } } /></span>
         </li>
     );
 }
