@@ -1,3 +1,6 @@
+*{
+    user-select: none;
+}
 .title-box {
     margin-top: 5vh;
     width: 50vw;
@@ -9,13 +12,32 @@
     font-family: "Inter";
 }
 
-.title-box h1 {
+.title-input {
     margin: 0;
     font-size: 5.1vh;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    word-wrap: break-word;
+    word-break: break-all;
 }
+.title-input::placeholder{
+    color: white;
 
-.title-box p {
-    font-size: 4.2vh;
+}
+.text-input::placeholder{
+    color: white;
+
+}
+.text-input {
+    font-size: 2vh;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 
