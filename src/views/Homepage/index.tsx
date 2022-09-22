@@ -11,7 +11,7 @@ export default function Homepage(params : {
         <section className="homepage">
             <div className={style["title-box"]}>
                 <input disabled ={editTitle} value="Título Principal"/><EditPencil action={()=>setEditTitle(false)}/>
-                <input disabled ={editText} value="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe tempore animi earum iste ipsum natus velit deleniti praesentium perspiciatis? Ea accusamus commodi animi!" /><EditPencil action={()=>setEditText(false)}/>
+                <input disabled ={editText} value="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe tempore animi earum iste ipsum natus velit deleniti praesentium perspiciatis? Ea accusamus commodi animi!" /><EditPencil action={()=>setEditText(false)} />
                 <div className={style["about-box"]}>Sobre el museo</div>
             </div>
         </section>

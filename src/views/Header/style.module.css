@@ -33,6 +33,7 @@
 
 .nav li {
 	flex: max-content 0;
+	cursor: pointer;
 }
 
 .home-icon {
