@@ -7,8 +7,7 @@
 .list-container {
     margin-top: 1vh;
 	height: max-content;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding: 1vw 2vw 1vw 2vw;
     border-radius: 0.8vw;
     background: #5B0B3B87;
 }
@@ -27,11 +26,13 @@
     margin-bottom: 1vw;
     position: relative;
     width: max-content;
+    max-width: 100%;
 	flex: min-content 0;
     box-sizing: border-box;
     padding: 2vw;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background: white;
     border-radius: 0.8vw;
 }
@@ -94,12 +95,12 @@
 }
 
 .unit-image {
-    height: 100%;
+    max-height: 100%;
     border: 0.2vw solid black;
     box-sizing: border-box;
 }
 
-.admin-list-unit .edit-btn {
+.corner-pencil {
     position: absolute;
     right: -0.6vw;
     top: -0.6vw;

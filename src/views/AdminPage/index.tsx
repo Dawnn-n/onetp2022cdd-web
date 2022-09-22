@@ -57,7 +57,7 @@ export default function AdminPage(params : {
 
     return (
         <section className={params.type+"s-admin"}>
-            <h1 className={style["title"]}>{titles[typeCode]}<EditPencil/></h1>
+            <h1 className={style["title"]}>{titles[typeCode]}<EditPencil /></h1>
             <div className={style["list-container"]}>
                 <ul>{adminList}</ul>
             </div>
@@ -107,7 +107,7 @@ function AdminListUnit(params : {
                 <form>{fieldList}</form>
             </div>
             <div className={style["unit-image"]}><h2>img holder</h2></div>
-            <div className={style["edit-btn"]} />
+            <span className={style["corner-pencil"]}><EditPencil /></span>
         </li>
     );
 }
