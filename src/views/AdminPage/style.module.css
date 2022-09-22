@@ -14,6 +14,7 @@
 
 .list-container ul {
     margin: 0;
+    padding: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -25,8 +26,7 @@
     margin-top: 1vw;
     margin-bottom: 1vw;
     position: relative;
-    width: max-content;
-    max-width: 100%;
+    width: 100%;
 	flex: min-content 0;
     box-sizing: border-box;
     padding: 2vw;
@@ -37,13 +37,17 @@
     border-radius: 0.8vw;
 }
 
+.admin-list-unit>div {
+    flex: max-content 0;
+}
+
 .admin-list-unit h2 {
     margin: 0;
     font-size: 4vh;
     font-family: "Inter";
 }
 
-.admin-list-unit>h2 {
+.admin-list-unit>div>h2 {
     margin-left: 1vw;
 }
 

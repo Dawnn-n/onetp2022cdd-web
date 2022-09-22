@@ -17,14 +17,16 @@ section {
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;
-}
-
-.login-page { 
-	overflow: hidden;
+  padding: 25.5vh 12.85vw 12.85vw 12.85vw;
 	background:#FFF3EB;
+  overflow: scroll;
 }
 
-section:not(.login-page) {
-  padding: 25.5vh 12.85vw 0 12.85vw;
-  background: url(./expo-background.jpg) 0 0 / cover scroll;
+.login-page {
+  padding: 0;
+  overflow: hidden;
+}
+
+section.homepage {
+  background: url(./expo-background.jpg) 0 0 / cover;
 }

@@ -49,7 +49,7 @@ export default function AdminPage(params : {
             newAdminList.push(<AdminListUnit type={params.type} id={i} />)
         }
         resetAdminList(newAdminList)
-    }, [])
+    }, [params.type])
 
     return (
         <section className={params.type+"s-admin"}>
