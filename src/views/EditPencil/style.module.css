@@ -1,0 +1,8 @@
+.edit-btn {
+    margin-left: 3vw;
+    width: 2vw;
+	height: 2vw;
+    display: inline-block;
+	background: url(../../assets/edit-icon.svg) 0 0 / 100% 100%;
+    transform: translate(0, 0.3vw);
+}
